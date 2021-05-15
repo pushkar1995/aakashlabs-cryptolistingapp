@@ -36,8 +36,8 @@ function App() {
   //   setTimeout(() => {
   //     Zabo.init({
   //       clientId: 'RJwggRZbKLwkOzKRmhGqBdHaOp7I0WDIzNDOS7JeUWbJLxWlmddyhRszcI7NO1SX',
-  //       apiKey: '0f7bce3f11dcf03b927fffa3d563a9154d8c14e7',
-  //       secretKey: '1b97e8bac1306c747012a3915052195fc5e8cb1d7295840f8d78546a4ccbd12b',
+  //       apiKey: '8423c8183b31c643fd93195e1773a62d900e6754',
+  //       secretKey: '6b1ebdef06b114605fca301e92eb91180e1b3f5abe813d65eeda34e7860093b3',
   //       env: 'sandbox'
   //     })
   //     .then(zabo => {
@@ -53,8 +53,8 @@ function App() {
       <div className='header-container'>
         <h1 className='main-header'>Crypto Currency Listing App</h1>
       </div>
-      {/* { isPending && <div>Its Loading...</div> } */}
-      {/* <div className='currencies-list-container'>  */}
+      { isPending && <div>Its Loading...</div> }
+      <div className='currencies-list-container'> 
         {currencies.map(currency => {
           return (
             <Currency
@@ -66,7 +66,7 @@ function App() {
             />
           )
         })}
-      {/* </div> */} 
+      </div> 
     </div>
   );
 }
